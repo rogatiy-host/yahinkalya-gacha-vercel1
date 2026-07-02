@@ -1,7 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/app.js" },
-    { "source": "/health", "destination": "/app.js" },
-    { "source": "/(.*)", "destination": "/app.js" }
-  ]
-}
