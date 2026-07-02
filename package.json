@@ -1,0 +1,33 @@
+{
+  "name": "yahinkalya-gacha",
+  "version": "1.0.0",
+  "description": "Telegram-ready gacha card site with admin panel, trading, quests, pity, shop and referrals.",
+  "type": "module",
+  "scripts": {
+    "start": "node server/src/app.js",
+    "dev": "nodemon server/src/app.js",
+    "db:psql": "psql $DATABASE_URL -f postgres/init.sql"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "pg": "^8.13.1",
+    "sanitize-filename": "^1.6.3",
+    "slugify": "^1.6.6",
+    "undici": "^7.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
