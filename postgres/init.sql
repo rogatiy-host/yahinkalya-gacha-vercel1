@@ -204,9 +204,7 @@ INSERT INTO tasks (title, description, type, reward_spins, reward_echo, payload,
 ('Реакция на пост', 'Поставь реакцию на пост дня. Проверка может быть ручной или через бота.', 'telegram_react', 1, 15, '{"url":"https://t.me/your_channel_username"}', TRUE, TRUE, 3)
 ON CONFLICT DO NOTHING;
 
-INSERT INTO promocodes (code, spins, echo, max_global_uses, max_per_user, active)
-VALUES ('YAHINKALYAONLY', 20, 0, 6, 1, TRUE)
-ON CONFLICT (code) DO NOTHING;
+-- Промокоды создаются через админ-панель, чтобы не светить секретные коды в публичном репозитории.
 
 INSERT INTO achievements (code, title, description, medal_emoji, reward_spins, reward_echo, auto_rule) VALUES
 ('veteran', 'Ветеран', 'Выдаётся вручную через админ-панель.', '🛡️', 0, 0, 'manual'),
